@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#9d8777" />
+  <meta name="description" content="NADI. | Modest Wear — исламская одежда, свадебные и вечерние платья для покрытых девушек." />
+  <title>NADI. | Modest Wear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f7f2ec;
+      --text: #40372f;
+      --muted: #786b60;
+      --gold: #ad8a59;
+      --line: rgba(173, 138, 89, .28);
+      --button: #fffdf9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: Manrope, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(210,184,150,.18), transparent 28%),
+        radial-gradient(circle at 90% 90%, rgba(210,184,150,.15), transparent 30%),
+        var(--cream);
+    }
+    .page {
+      width: min(100%, 560px);
+      margin: 0 auto;
+      padding: 34px 20px 28px;
+      text-align: center;
+    }
+    .logo-wrap {
+      width: 100%;
+      max-width: 330px;
+      margin: 0 auto 20px;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 14px 38px rgba(82, 61, 45, .10);
+    }
+    .logo-wrap img { display: block; width: 100%; height: auto; }
+    h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(31px, 8vw, 44px);
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+    .tagline {
+      margin: 5px 0 7px;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    .description {
+      margin: 0 auto 27px;
+      max-width: 360px;
+      color: var(--muted);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+    .rule { width: 54px; height: 1px; margin: 0 auto 24px; background: var(--gold); opacity: .7; }
+    .links { display: grid; gap: 12px; }
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 15px 22px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      color: var(--text);
+      background: rgba(255,253,249,.78);
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: .06em;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .link:hover, .link:focus-visible {
+      transform: translateY(-2px);
+      background: var(--button);
+      box-shadow: 0 8px 20px rgba(82, 61, 45, .10);
+      outline: none;
+    }
+    .link.primary { color: #fffaf2; background: #9d8777; border-color: #9d8777; }
+    .link.primary:hover, .link.primary:focus-visible { background: #8d7565; }
+    .icon { margin-right: 10px; font-size: 16px; }
+    footer { margin-top: 29px; color: #a29080; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="logo-wrap">
+      <img src="https://unlimbot-03.hb.ru-msk.vkcloud-storage.ru/uploads/0154eb8933ba441792735a5b023b85f89ed6d309390102c5.jpg" alt="Логотип NADI. Modest Wear" />
+    </div>
+
+    <h1>NADI. | Modest Wear</h1>
+    <div class="tagline">Timeless modest wear</div>
+    <p class="description">Элегантность в каждой детали.<br />Свадебные и вечерние платья для покрытых девушек.</p>
+    <div class="rule"></div>
+
+    <nav class="links" aria-label="Контакты NADI">
+      <a class="link" href="https://www.instagram.com/nadi__uz/" target="_blank" rel="noopener"><span class="icon">◎</span>Наш Instagram</a>
+      <a class="link" href="https://t.me/f_dilas" target="_blank" rel="noopener"><span class="icon">✈</span>Наш Telegram</a>
+      <a class="link primary" href="https://wa.me/998997124844" target="_blank" rel="noopener"><span class="icon">♡</span>Связаться с администратором</a>
+    </nav>
+
+    <footer>NADI. · Modest Wear</footer>
+  </main>
+</body>
+</html>
